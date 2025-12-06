@@ -1,0 +1,57 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Sensitive credentials - NEVER COMMIT THESE
+**/terraform.tfvars
+!**/terraform.tfvars.example
+shared/terraform.tfvars
+
+# CSV files with production data
+*_inventory_*.csv
+dlp_policies_*.csv
+environment_inventory_*.csv
+
+# But keep example CSV files
+!*-example.csv
+!environments-example.csv
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Terraform plugin cache
+.terraform.d/
+
+# Terraform plan files
+*.tfplan
+
+# Environment files
+.env
+.env.local
+.envrc
+
+# Backup files
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Personal notes
+notes.txt
+TODO.md
+NOTES.md

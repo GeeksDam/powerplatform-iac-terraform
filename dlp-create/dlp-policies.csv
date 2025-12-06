@@ -1,0 +1,8 @@
+# dlp-policies.csv - Define DLP policies and their scope
+# Format: policy_name,default_classification,environment_type,environments
+# environment_type values: AllEnvironments, OnlyEnvironments, ExceptEnvironments
+# environments: semicolon-separated list of environment IDs (empty for AllEnvironments)
+policy_name,default_classification,environment_type,environments
+Production-DLP-Policy,Confidential,OnlyEnvironments,env-id-1;env-id-2;env-id-3
+Development-DLP-Policy,General,ExceptEnvironments,env-id-4
+Tenant-Wide-Policy,General,AllEnvironments,

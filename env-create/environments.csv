@@ -1,0 +1,7 @@
+# environments.csv - CSV file with environment definitions
+display_name,environment_type,location,currency_code,language_code,security_group_id,enable_dataverse,description
+Dev-Finance,Sandbox,unitedstates,USD,1033,bb99bebc-f298-43ba-b463-17bf20335e12,TRUE,Development environment for Finance team
+Dev-Sales,Sandbox,unitedstates,USD,1033,bb99bebc-f298-43ba-b463-17bf20335e12,TRUE,Development environment for Sales team
+Dev-HR,Sandbox,unitedstates,USD,1033,bb99bebc-f298-43ba-b463-17bf20335e12,TRUE,Development environment for HR team
+Test-Integration,Sandbox,unitedstates,USD,1033,bb99bebc-f298-43ba-b463-17bf20335e12,TRUE,Integration testing environment
+UAT-Production,Production,unitedstates,USD,1033,bb99bebc-f298-43ba-b463-17bf20335e12,TRUE,User acceptance testing environment

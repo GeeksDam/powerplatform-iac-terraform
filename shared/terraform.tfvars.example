@@ -1,0 +1,12 @@
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in your actual credentials
+# NEVER commit terraform.tfvars to version control!
+
+# Azure AD App Registration Client ID
+client_id = "00000000-0000-0000-0000-000000000000"
+
+# Azure AD App Registration Client Secret
+client_secret = "your-client-secret-here"
+
+# Azure Tenant ID
+tenant_id = "00000000-0000-0000-0000-000000000000"

@@ -1,0 +1,30 @@
+# dlp-connectors.csv - Assign connectors to DLP policies
+# Format: policy_name,connector_id,classification
+# classification values: Business, NonBusiness, Blocked
+# Common connector IDs:
+# - /providers/Microsoft.PowerApps/apis/shared_sharepointonline - SharePoint
+# - /providers/Microsoft.PowerApps/apis/shared_office365users - Office 365 Users
+# - /providers/Microsoft.PowerApps/apis/shared_office365 - Office 365 Outlook
+# - /providers/Microsoft.PowerApps/apis/shared_approvals - Approvals
+# - /providers/Microsoft.PowerApps/apis/shared_teams - Microsoft Teams
+# - /providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness - OneDrive for Business
+# - /providers/Microsoft.PowerApps/apis/shared_planner - Planner
+# - /providers/Microsoft.PowerApps/apis/shared_azuread - Azure AD
+# - /providers/Microsoft.PowerApps/apis/shared_sql - SQL Server
+# - /providers/Microsoft.PowerApps/apis/shared_commondataservice - Microsoft Dataverse
+policy_name,connector_id,classification
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_sharepointonline,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_office365users,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_office365,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_teams,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_commondataservice,Business
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_twitter,Blocked
+Production-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_facebook,Blocked
+Development-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_sharepointonline,Business
+Development-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_commondataservice,Business
+Development-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_office365,NonBusiness
+Development-DLP-Policy,/providers/Microsoft.PowerApps/apis/shared_twitter,NonBusiness
+Tenant-Wide-Policy,/providers/Microsoft.PowerApps/apis/shared_sharepointonline,Business
+Tenant-Wide-Policy,/providers/Microsoft.PowerApps/apis/shared_commondataservice,Business
+Tenant-Wide-Policy,/providers/Microsoft.PowerApps/apis/shared_office365,Business
